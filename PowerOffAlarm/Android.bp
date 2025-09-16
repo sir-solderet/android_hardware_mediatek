@@ -44,6 +44,15 @@ cc_library {
         "liblog",
     ],
     system_ext_specific: true,
+
+    arch: {
+       arm: {
+            enabled: false,
+       },
+       arm64: {
+            enabled: true,
+       },
+    },
 }
 
 prebuilt_etc {
